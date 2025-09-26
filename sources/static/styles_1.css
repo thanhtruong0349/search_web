@@ -1,0 +1,77 @@
+body {
+            font-family: 'Raleway', 'Lato', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #004080;
+        }
+        .search__container {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+        }
+        .search__title {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            color: #004080;
+        }
+        .search__input {
+            width: 70%;
+            padding: 12px 20px;
+            font-size: 16px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        .search__input:focus {
+            border-color: #004080;
+            outline: none;
+        }
+        .search__button {
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search__button:hover {
+            background-color: #00264d;
+        }
+        .options__container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: block;
+        }
+        select {
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            font-size: 16px;
+        }
+        .search__input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        p {
+            color: #cc0000;
+            text-align: center;
+        }

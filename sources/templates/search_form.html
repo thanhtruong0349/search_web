@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Paper Search</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_1.css') }}">
+</head>
+<body>
+     <h1> Scientific Paper Search Portal</h1>
+    <div class="search__container">
+        <form method="POST" action="/">
+            <p class="search__title">Search Scientific Paper with some retrieval methods</p>
+            <div class="search__input-group">
+                <input class="search__input" type="text" name="query" id="query" placeholder="e.g. Information Retrieval Models" required>
+                <button type="submit" class="search__button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="options__container">
+                <div class="algorithm__container">
+                    <label for="algorithm">Retrieval Algorithm:</label>
+                    <select name="algorithm" id="algorithm">
+                        <option value="boolean">Boolean Retrieval</option>
+                        <option value="vsm">Vector Space Model</option>
+                        <option value="okapiBM25">BM25</option>
+                        <option value="bert">BERT (Semantic Search)</option>
+                    </select>
+                </div>
+                <div class="filter__container">
+                    <label for="filter_criteria">Search by (optional):</label>
+                    <select name="filter_criteria" id="filter_criteria">
+                        <option value="none">None</option>
+                        <option value="Authors">Author</option>
+                        <option value="Submitted Date">Submission Date</option>
+                        <option value="Subjects">Subject</option>
+                        <option value="Subject_Tags">Subject Tag</option>
+                        <option value="Title">Title</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+    {% if error_message %}
+        <p>{{ error_message }}</p>
+    {% endif %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <div style="text-align: center; margin-top: 40px; font-size: 14px; color: #666;">
+        Developed by Group 3: <br> Truong Le My Thanh
+                      <br> Nguyen Ngoc Lan Thi
+                      <br> Do Thi Kim Anh
+    </div>
+</body>
+</html>
