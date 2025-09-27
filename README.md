@@ -5,8 +5,10 @@
 This project implements a comprehensive academic paper search engine using Python. It comprises a web crawler to collect metadata, text processing for content preparation, indexing for efficient search, and multiple retrieval algorithms (Boolean Retrieval, Vector Space Model, Okapi BM25) for result ranking. The system offers a user-friendly web interface using  Python's Flask web framework, with a retrieval algorithm dropdown list selection and filtering options for searches, including criteria such as author, subject, submission date, title, etc.
 
 ## 🎥 Preview 
-![Search Engine Preview](/app%20screenshots/SearchEngineUsage.gif)
-
+<!-- ![Search Engine Preview](/app%20screenshots/SearchEngineUsage.gif) -->
+<video src="/app%20screenshots/demo.mp4" controls autoplay loop muted width="700">
+  Your browser does not support the video tag.
+</video>
 ## 🛠️ Getting Started 
 
 ### Prerequisites:
@@ -15,7 +17,7 @@ This project implements a comprehensive academic paper search engine using Pytho
 
 1. **Clone the Repository:**
      ```bash
-     git clone https://github.com/MelinaMoraiti/Academic-Papers-Search-Engine.git
+     git clone https://github.com/thanhtruong0349/search_web
      cd sources
      ```
 2. **Install Dependencies:**
