@@ -49,11 +49,12 @@ The system is built with a Web interface (Flask), allowing users to enter querie
 ## 🔮💡 Future Ideas 
 
 In the next phase, the team plans to expand the system in the following directions:
-Developing keyword pair and natural semantic search: Allowing users to query by keyword pair, natural language instead of just individual keywords.
-Fine-tuning the academic BERT model: Using variants like SciBERT or SPECTRE to improve search efficiency on scientific research data.
-Integrating RAG (Retrieval-Augmented Generation): Combining the retrieval model with LLM to generate feedback, summarizing information from many articles.
+- Developing keyword pair and natural semantic search: Allowing users to query by keyword pair, natural language instead of just individual keywords.
+- Fine-tuning the academic BERT model: Using variants like SciBERT or SPECTRE to improve search efficiency on scientific research data.
+- Integrating RAG (Retrieval-Augmented Generation): Combining the retrieval model with LLM to generate feedback, summarizing information from many articles.
 
 ## 🙏 Acknowledgements 
 
 - Thank you to arXiv for use of its open access interoperability.
+
 
