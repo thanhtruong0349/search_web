@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project implements a comprehensive academic paper search engine using Python. It comprises a web crawler to collect metadata, text processing for content preparation, indexing for efficient search, and multiple retrieval algorithms (Boolean Retrieval, Vector Space Model, Okapi BM25) for result ranking. The system offers a user-friendly web interface using  Python's Flask web framework, with a retrieval algorithm dropdown list selection and filtering options for searches, including criteria such as author, subject, submission date, title, etc.
+With the increasing number of scientific articles on open data repositories such as arXiv, IEEE, ACM, and Springer, finding relevant, accurate, and fast documents has become a big challenge for researchers. Existing tools such as Google Scholar or Semantic Scholar are powerful but limited in customization and lack transparency in ranking algorithms.
+This project aims to develop a search platform that can: preprocess text, inverted index, implement and compare Information Retrieval (IR) models such as Boolean Retrieval, Vector Space Model (VSM), Okapi BM25, and BERT.
+The system is built with a Web interface (Flask), allowing users to enter queries, select search models, and filter results by author, topic, or publication time. The results are evaluated using standard metrics such as Precision, Recall, and F1-score to compare the performance between models.
 
 ## 🎥 Preview 
 <!-- ![Search Engine Preview](/app%20screenshots/SearchEngineUsage.gif) -->
@@ -46,11 +48,12 @@ This project implements a comprehensive academic paper search engine using Pytho
 
 ## 🔮💡 Future Ideas 
 
-- [x] **Utilizing arXiv's Public API for Faster Data Collection**
-- [ ] **Implementation of Multi-Threading for Data Processing**
-- [ ] **Pagination Support for Result Presentation**
-- [X] **Create a Dockerfile**
+In the next phase, the team plans to expand the system in the following directions:
+Developing keyword pair and natural semantic search: Allowing users to query by keyword pair, natural language instead of just individual keywords.
+Fine-tuning the academic BERT model: Using variants like SciBERT or SPECTRE to improve search efficiency on scientific research data.
+Integrating RAG (Retrieval-Augmented Generation): Combining the retrieval model with LLM to generate feedback, summarizing information from many articles.
 
 ## 🙏 Acknowledgements 
 
 - Thank you to arXiv for use of its open access interoperability.
+
